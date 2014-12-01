@@ -1,9 +1,9 @@
 # typed-async-whatsit
 
-Doing this:
+Compiling this project, like so:
 
 ```
-lein run -m clojure.main -e "(doto 'typed-async-whatsit.core require in-ns) (t/check-ns)"
+lein run -m clojure.main -e "(require 'typed-async-whatsit.core)"
 ```
 
 gets me this:
