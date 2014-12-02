@@ -6,7 +6,7 @@
 (t/ann connect [-> nil])
 (defn connect
   []
-  (let [ch (t.a/chan :- String 100)]
+  (let [ch (t.a/chan :- String)]
     (t.a/go-loop []
       (a/>! ch "hey hey"))
     nil))
