@@ -8,7 +8,5 @@
   []
   (let [ch (t.a/chan :- String 100)]
     (t.a/go-loop []
-      (let [s "hey hey"]
-        (a/>! ch s)
-        (recur)))
+      (a/>! ch "hey hey"))
     nil))
